@@ -8,7 +8,7 @@ jest.mock('../src/service/oracle', () => {
     return {
       Oracle: jest.fn().mockImplementation(() => {
         return {
-            getCurrentPrice: async(symbol: string) => {},
+            getCurrentPrice: async() => {},
             updatePrice: jest.fn()
         };
       })
