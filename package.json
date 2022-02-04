@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npx tsc && node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "FM",
   "license": "ISC",
@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "@terra-money/terra.js": "^3.0.6",
-    "axios": "^0.25.0"
+    "@types/jest": "^27.4.0",
+    "axios": "^0.25.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3"
   }
 }
