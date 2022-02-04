@@ -54,7 +54,7 @@ describe('executeFeeder', () => {
         price.getPrice = async() => {
             return { "LUNA": "100" }
         }
-        oracle.getCurrentPrice = async(symbol: string) => {
+        oracle.getCurrentPrice = async() => {
             return 1.0
         }
         await executeFeeder(price, oracle)
@@ -67,7 +67,7 @@ describe('executeFeeder', () => {
         price.getPrice = async() => {
             return { "LUNA": "10000" }
         }
-        oracle.getCurrentPrice = async(symbol: string) => {
+        oracle.getCurrentPrice = async() => {
             return 9999
         }
         await executeFeeder(price, oracle)

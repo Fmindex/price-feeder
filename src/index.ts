@@ -23,7 +23,7 @@ async function main(): Promise<void> {
   console.log("price feeder is running...")
   
   // define const
-  const minutes = 1 / 4
+  const minutes = 1 / 2
   const interval = minutes * 60 * 1000
   setInterval(async () => {
     executeFeeder(priceClient, oracleClient)
