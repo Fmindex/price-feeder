@@ -16,7 +16,7 @@ A scheduled function which keep the price in oracle contract updated.
 2. Run: `yarn start`
 3. Test: `yarn test`
 
-### how to add new symbol
+### How to add new symbol
 
 in the `src/feeder.ts`, add new symbol to `symbols`
 
